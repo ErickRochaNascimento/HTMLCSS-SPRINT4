@@ -1,0 +1,55 @@
+ /*#1b357e; Azul Escuro
+  #1351d8; Azul claro*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    gap: 2rem;
+}
+
+header ul li{
+    cursor: pointer;
+    
+}
+
+a{
+    color: #1351d8;
+}
+
+
+
+p{
+    color: black;
+}
+
+
+footer{
+    background-color: #1b357e;
+   
+    width: 100%;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+footer ul li{
+    cursor: pointer;
+}
+
+
