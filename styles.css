@@ -121,13 +121,21 @@
  }
 
 
- /*Formulario*/
+ /*Contato*/
 
- .formulario {
+ .div-formulario {
      width: 100%;
      align-items: center;
      display: flex;
-     flex-direction: column;
      justify-content: center;
      padding-top: 3rem;
+ }
+
+ .formulario{
+    height: 4rem;
+ }
+
+ form input{
+    border-radius: 5px;
+    
  }
