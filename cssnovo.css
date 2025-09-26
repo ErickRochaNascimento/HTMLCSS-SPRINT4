@@ -1,88 +1,114 @@
- /*#1b357e; Azul Escuro
+ /*CORES
+ #1b357e; Azul Escuro
   #1351d8; Azul claro*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
 
-header{
+/*PRINCIPAL */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     list-style: none;
+     text-decoration: none;
+ }
+
+ body{
+    position: fixed;
     width: 100%;
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header ul{
-    display: flex;
-    gap: 2rem;
-    
-}
-
-header ul li{
-    cursor: pointer;
-    
-}
-
-a{
-    color: #1351d8;
-    font-size: 1.4rem;
-}
+ }
 
 
-header nav{
-    width: 34%;
-}
+/*HEADER */
+ header {
+     width: 100%;
+     height: 5rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 8px;
+ }
 
-p{
-    color: black;
-}
+ header ul {
+     display: flex;
+     gap: 2rem;
+
+ }
+
+ header ul li {
+     cursor: pointer;
+
+ }
+
+ header nav {
+     width: 34%;
+ }
 
 
+/*LETRAS */
+h1{
+     color: #1351d8;
+     font-size: 1.4rem;
+ }
 
-#imagePrincipal{
-    width: 80%;
-    height: auto;
-}
-
-h3{
-    padding-bottom: 4px;
-}
+ h3 {
+     padding-bottom: 4px;
+     color: aliceblue;
+ }
 
 
-footer{
-    background-color: #1b357e;
-    width: 100%;
-}
+ p {
+     color: black;
+ }
 
-footer ul{
-    display: flex;
-    flex-direction: row;
-    gap: 2px;
-    align-items: end;
 
-}
+/*FLANCAMENTO */
+  .lancamento {
+     width: 100%;
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding-top: 3rem;
+ }
 
-footer ul li{
-    cursor: pointer;
-}
+ #imagePrincipal {
+     width: 110%;
+     height: auto;
+     padding-right: 9rem;
+ }
 
-#copyright{
-   color: aliceblue;
-   text-align: center;
-   font-size: 1rem;
-}
+ /*FOOTER */
+ footer {
+     background-color: #1b357e;
+     width: 100%;
+     position: fixed;
+     bottom: 0;
+ }
 
-footer .redes-sociais{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
+ footer ul {
+     display: flex;
+     flex-direction: row;
+     gap: 2px;
+     align-items: center;
 
-#logoRedes{
-width: 3rem;
-}
+ }
+
+ footer ul li {
+     cursor: pointer;
+ }
+
+ footer .redes-sociais {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     text-align: center;
+ }
+
+ #logoRedes {
+     width: 3rem;
+ }
+
+#copyright {
+     color: aliceblue;
+     text-align: center;
+     font-size: 1rem;
+ }
