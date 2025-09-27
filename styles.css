@@ -13,8 +13,10 @@
  }
 
  body {
-     position: fixed;
      width: 100%;
+     overflow-x: hidden;
+     margin: 0;
+     padding: 0;
  }
 
 
@@ -85,9 +87,15 @@
  }
 
  #imagePrincipal {
-     width: 110%;
+     width: 100%;
+     max-width: 800px;
      height: auto;
-     padding-right: 9rem;
+     padding-right: 0;
+ }
+
+ .principal p {
+     text-align: center;
+     padding: 0 1rem;
  }
 
  /*FOOTER */
@@ -225,12 +233,8 @@
  }
 
  iframe {
-     width: 49.78rem;
-     height: 28rem;
-     background-color: #1b357e;
-     border-radius: 15px;
-     padding-top: 0.2rem;
-     padding-bottom: 0.2rem;
+     width: 42.66rem;
+     height: 24rem;
  }
 
  .carros {
@@ -270,4 +274,79 @@
  button:hover {
      width: 12rem;
      height: 2.5rem;
+ }
+
+ /* Media Query para telas menores que 768px (tablets e celulares) */
+ @media (max-width: 768px) {
+     header {
+         flex-direction: column;
+         /* Empilha o logo e a navegação */
+         height: auto;
+         /* Altura automática para caber o conteúdo */
+         padding: 1rem;
+     }
+
+     header nav ul {
+         flex-direction: column;
+         /* Itens da navegação em coluna */
+         gap: 1rem;
+         /* Espaçamento entre os itens */
+         text-align: center;
+         /* Centraliza o texto */
+     }
+
+     #logoFord {
+         margin-bottom: 1rem;
+         /* Adiciona espaço abaixo do logo */
+     }
+
+     .carros {
+         flex-direction: column;
+         /* Empilha os carros */
+         align-items: center;
+         /* Centraliza os itens */
+     }
+
+     .carros th {
+         width: 90%;
+         /* Ajusta a largura */
+         margin-bottom: 2rem;
+         /* Adiciona espaço entre os carros */
+     }
+
+     #fundoVideo,
+     iframe {
+         width: 95%;
+         /* Ajusta a largura para caber na tela */
+         height: auto;
+         /* Mantém a proporção do vídeo */
+     }
+
+     .div-formulario {
+         flex-direction: column;
+         /* Empilha a imagem e o formulário */
+     }
+
+     .div-formulario img {
+         width: 80%;
+         /* Ajusta a largura da imagem */
+         margin-bottom: 2rem;
+     }
+
+     form input,
+     form select {
+         width: 100%;
+         /* Faz os campos ocuparem toda a largura disponível */
+     }
+
+     footer .redes-sociais {
+         flex-direction: column;
+         /* Empilha os elementos do rodapé */
+     }
+
+     #copyright {
+         margin: 1rem 0;
+         /* Adiciona espaçamento vertical */
+         text-align: center;
+     }
  }
