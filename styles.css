@@ -23,30 +23,28 @@
      height: 5rem;
      display: flex;
      align-items: center;
+     justify-content: space-between;
      margin-top: 8px;
+     justify-content: space-between;
+     border-bottom: 1px solid #ddd;
  }
 
- header ul {
+ header nav ul {
      display: flex;
      gap: 2rem;
      justify-content: center;
-
-
+     padding: 0;
+margin: 0;
+   
  }
 
  header ul li {
      cursor: pointer;
-
  }
 
- header nav {
-     width: 64%;
+ header img {
+     height: 4rem;
  }
-
- #divHeader {
-     width: 33%;
- }
-
 
  /*LETRAS */
  h1 {
@@ -100,6 +98,7 @@
      bottom: 0;
      padding-left: 1px;
      padding-right: 2px;
+     padding-top: 0.2rem;
  }
 
  footer ul {
