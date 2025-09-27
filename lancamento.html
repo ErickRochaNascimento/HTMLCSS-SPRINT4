@@ -27,36 +27,54 @@
         <div id="divHeader"></div>
     </header>
     <main id="lancamento">
-        <iframe width="943" height="539" src="https://www.youtube.com/embed/vQsryuNmsL0"
-            title="Ford Ranger 2022 | Gerações" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p></p>
-        <div class="carros">
-            <div class="carro">
-                <img src="./img/XL Cabine.jpg" alt="XL Cabine">
-                <input type="checkbox" name="" id="carroXLCabine">
-                <h4>XL Cabine Simples 2.2 Diesel 4X4 MT 2022
-                </h4>
-                <p>Preço Sugerido: R$ 183.850
-                </p>
-            </div>
-            <div class="carro">
-                <img src="./img/xls 2.2 diesel.jpg" alt="XLS">
-                <input type="checkbox" name="" id="carroXLS">
-                <h4>XLS 2.2 Diesel 4X4 AT 2022
-                </h4>
-                <p>Preço Sugerido: R$ 220.690
-                </p>
-            </div>
-            <div class="carro">
-                <img src="./img/storm.jpg" alt="STORM">
-                <input type="checkbox" name="" id="carroSTORM">
-                <h4>Storm 3.2 Diesel 4X4 AT 2022
-                </h4>
-                <p>Preço Sugerido: R$ 222.790</p>
-            </div>
+        <div id="fundoVideo">
+            <iframe width="943" height="539" src="https://www.youtube.com/embed/vQsryuNmsL0"
+                title="Ford Ranger 2022 | Gerações" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p></p>
         </div>
+        <table class="carros">
+            <tr>
+                <th>
+                    <img src="./img/XL Cabine.jpg" alt="XL Cabine">
+                    <div class="info-carro">
+                        <input type="checkbox" name="" id="carroXLCabine">
+                        <div class="texto-carro">
+                            <h4>XL Cabine Simples 2.2 Diesel <br>4X4 MT 2022
+                            </h4>
+                            <p class="preco">Preço Sugerido: R$ 183.850
+                        </div>
+                        </p>
+                    </div>
+                </th>
+                <th>
+                    <img src="./img/xls 2.2 diesel.jpg" alt="XLS">
+                    <div class="info-carro">
+                        <input type="checkbox" name="" id="carroXLS">
+                        <div class="texto-carro">
+                            <h4>XLS 2.2 Diesel 4X4 AT 2022
+                            </h4>
+                            <p class="preco">Preço Sugerido: R$ 220.690
+                            </p>
+                        </div>
+                    </div>
+
+                </th>
+                <th>
+                    <img src="./img/storm.jpg" alt="STORM">
+                    <div class="info-carro">
+                        <input type="checkbox" name="" id="carroSTORM">
+                        <div class="texto-carro">
+                            <h4>Storm 3.2 Diesel 4X4 AT 2022
+                            </h4>
+                            <p class="preco">Preço Sugerido: R$ 222.790</p>
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        </table>
+        <button type="button"><h3>Comparar</h3></button>
     </main>
     <footer>
         <div class="redes-sociais">
