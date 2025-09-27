@@ -55,8 +55,7 @@
  }
 
  h3 {
-     padding-bottom: 4px;
-     color: aliceblue;
+     color: #f0f0f0;
  }
 
 
@@ -111,7 +110,7 @@
  }
 
  #logoRedes {
-     width: 3rem;
+     width: 2rem;
  }
 
  #copyright {
@@ -131,11 +130,64 @@
      padding-top: 3rem;
  }
 
+ 
  .formulario{
     height: 4rem;
  }
 
- form input{
-    border-radius: 5px;
+ form input, form select{
+    border-radius: 10px;
+    width: 20rem;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+    border: solid 2px #1b357e;
+    font-size: 1rem;
+    outline: none;
+ }
+
+ #campoMensagem{
+    height: 5rem;
     
+ }
+
+ #campoMensagem::placeholder{
+    text-align: start;
+ }
+ form input:hover, form select:hover{
+    border: solid 3px #1351d8;
+ }
+
+  form input::placeholder{
+    font-size: 1rem;
+    padding-left: 0.3rem;
+    color: #000000;
+ }
+
+ form input:focus{
+    padding-left: 0.19rem;
+    color: #1b357e;
+}
+
+ form select:active{
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+ form select option{
+    font-size: 1rem;
+    color: #1b357e;
+ }
+
+ 
+
+ form button{
+    border-radius: 10px;
+    width: 10rem;
+    height: 2rem;
+    background-color: #1b357e;
+    border: transparent;
+ }
+
+ form button:hover{
+    width: 12rem;
+    height: 2.5rem;
  }
