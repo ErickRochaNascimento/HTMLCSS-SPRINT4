@@ -35,8 +35,8 @@
      gap: 2rem;
      justify-content: center;
      padding: 0;
-margin: 0;
-   
+     margin: 0;
+
  }
 
  header ul li {
@@ -147,7 +147,8 @@ margin: 0;
  }
 
  form input,
- form select {
+ form select,
+ form textarea {
      border-radius: 10px;
      width: 20rem;
      height: 3rem;
@@ -159,11 +160,7 @@ margin: 0;
 
  #campoMensagem {
      height: 5rem;
-
- }
-
- #campoMensagem::placeholder {
-     text-align: start;
+     padding: 0.5rem;
  }
 
  form input:hover,
@@ -171,13 +168,13 @@ margin: 0;
      border: solid 3px #1351d8;
  }
 
- form input::placeholder {
+ form input::placeholder, form textarea::placeholder {
      font-size: 1rem;
      padding-left: 0.3rem;
      color: #000000;
  }
 
- form input:focus {
+ form input:focus, form textarea:focus {
      padding-left: 0.19rem;
      color: #1b357e;
  }
