@@ -27,18 +27,16 @@
      display: flex;
      align-items: center;
      justify-content: space-between;
-     margin-top: 8px;
-     justify-content: space-between;
      border-bottom: 1px solid #ddd;
  }
 
  header nav ul {
+    width: 80%;
      display: flex;
      gap: 2rem;
      justify-content: center;
      padding: 0;
      margin: 0;
-
  }
 
  header ul li {
@@ -47,6 +45,14 @@
 
  header img {
      height: 4rem;
+ }
+
+ #navHeader{
+    flex-grow: 1;
+ }
+
+ a{
+    display: flex;
  }
 
  /*LETRAS */
@@ -88,7 +94,6 @@
 
  #imagePrincipal {
      width: 100%;
-     max-width: 800px;
      height: auto;
      padding-right: 0;
  }
@@ -96,6 +101,10 @@
  .principal p {
      text-align: center;
      padding: 0 1rem;
+ }
+
+ #text-principal{
+    display: flex;
  }
 
  /*FOOTER */
@@ -220,7 +229,7 @@
      align-items: center;
  }
 
- #fundoVideo {
+ /*#fundoVideo {
      width: 60%;
      justify-content: center;
      display: flex;
@@ -230,11 +239,11 @@
      border-radius: 15px;
      padding-top: 0.2rem;
      padding-bottom: 0.2rem;
- }
+ }*/
 
  iframe {
-     width: 42.66rem;
-     height: 24rem;
+     width: 100%;
+     height: 26rem;
  }
 
  .carros {
@@ -324,6 +333,7 @@
 
      .div-formulario {
          flex-direction: column;
+         position: relative;
          /* Empilha a imagem e o formulário */
      }
 
