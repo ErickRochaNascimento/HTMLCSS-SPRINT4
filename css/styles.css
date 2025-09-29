@@ -31,7 +31,7 @@
  }
 
  header nav ul {
-    width: 80%;
+     width: 80%;
      display: flex;
      gap: 2rem;
      justify-content: center;
@@ -47,12 +47,12 @@
      height: 4rem;
  }
 
- #navHeader{
-    flex-grow: 1;
+ #navHeader {
+     flex-grow: 1;
  }
 
- a{
-    display: flex;
+ a {
+     display: flex;
  }
 
  /*LETRAS */
@@ -121,7 +121,7 @@
      font-size: 1rem;
  }
 
-  /*LANCAMENTO */
+ /*HOME */
  .principal {
      width: 100%;
      align-items: center;
@@ -142,8 +142,8 @@
      padding: 0 1rem;
  }
 
- #text-principal{
-    display: flex;
+ #text-principal {
+     display: flex;
  }
 
  /*Contato*/
@@ -183,13 +183,15 @@
      border: solid 3px #1351d8;
  }
 
- form input::placeholder, form textarea::placeholder {
+ form input::placeholder,
+ form textarea::placeholder {
      font-size: 1rem;
      padding-left: 0.3rem;
      color: #000000;
  }
 
- form input:focus, form textarea:focus {
+ form input:focus,
+ form textarea:focus {
      padding-left: 0.19rem;
      color: #1b357e;
  }
@@ -281,6 +283,9 @@
  button:hover {
      width: 12rem;
      height: 2.5rem;
+     background-color: #1b357e;
+     border: solid 3px #1351d8;
+
  }
 
  /* Media Query para telas menores que 768px (tablets e celulares) */
@@ -346,6 +351,7 @@
          width: 100%;
          /* Faz os campos ocuparem toda a largura disponível */
      }
+    
 
      footer .redes-sociais {
          flex-direction: column;
