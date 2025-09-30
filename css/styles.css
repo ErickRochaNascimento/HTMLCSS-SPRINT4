@@ -20,14 +20,17 @@
  }
 
 
- /*HEADER */
+
+ /* HEADER */
  header {
      width: 100%;
      height: 5rem;
      display: flex;
      align-items: center;
-     justify-content: space-between;
+     justify-content: center;
+     position: relative;
      border-bottom: 1px solid #ddd;
+     gap: 3rem;
  }
 
  header nav ul {
@@ -35,6 +38,7 @@
      display: flex;
      gap: 2rem;
      justify-content: center;
+     align-items: center;
      padding: 0;
      margin: 0;
  }
@@ -47,14 +51,19 @@
      height: 4rem;
  }
 
- #navHeader {
-     flex-grow: 1;
- }
-
  a {
      display: flex;
  }
 
+ header nav h1{
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+
+ }
+
+ #logoFord{
+    position: absolute;
+ }
  /*LETRAS */
  h1 {
      color: #1351d8;
