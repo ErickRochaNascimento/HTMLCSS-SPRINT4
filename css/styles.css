@@ -21,49 +21,58 @@
 
 
 
- /* HEADER */
- header {
-     width: 100%;
-     height: 5rem;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     position: relative;
-     border-bottom: 1px solid #ddd;
-     gap: 3rem;
- }
+/* HEADER - MÉTODO DE POSICIONAMENTO ABSOLUTO */
+header {
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid #ddd;
+    position: relative; /* Essencial para o posicionamento do filho */
+}
 
- header nav ul {
-     width: 80%;
-     display: flex;
-     gap: 2rem;
-     justify-content: center;
-     align-items: center;
-     padding: 0;
-     margin: 0;
- }
+/* Posiciona o logo no canto esquerdo */
+header > a:first-child {
+    position: absolute;
+    left: 2rem;
+    top: 50%; /* Alinha o topo do logo com o meio do header */
+    transform: translateY(-50%); /* Ajusta a posição para centralizar verticalmente */
+}
 
- header ul li {
-     cursor: pointer;
- }
+/* Centraliza a navegação de forma absoluta */
+#navHeader {
+    position: absolute;
+    left: 50%;  /* Posiciona o início da nav no meio do header */
+    top: 50%;   /* Posiciona o topo da nav no meio do header */
+    transform: translate(-50%, -50%); /* Puxa a nav de volta pela metade de seu tamanho */
+}
 
- header img {
-     height: 4rem;
- }
+/* O restante do CSS para a navegação continua igual */
+header nav ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
 
- a {
-     display: flex;
- }
+header ul li {
+    cursor: pointer;
+}
 
- header nav h1{
+header img {
+    height: 4rem;
+}
+
+a {
+    display: flex;
+}
+
+header nav h1 {
     font-size: 2rem;
     font-family: "Roboto", sans-serif;
+    margin: 0;
+}
 
- }
-
- #logoFord{
-    position: absolute;
- }
  /*LETRAS */
  h1 {
      color: #1351d8;
@@ -73,8 +82,9 @@
 
  h2 {
      color: #000000;
-     font-size: 1rem;
- }
+     font-size: 1.5rem;
+     font-weight: 600;
+    }
 
  h3 {
      color: #f0f0f0;
@@ -360,7 +370,7 @@
          width: 100%;
          /* Faz os campos ocuparem toda a largura disponível */
      }
-    
+
 
      footer .redes-sociais {
          flex-direction: column;
