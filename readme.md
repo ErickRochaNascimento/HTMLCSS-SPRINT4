@@ -66,7 +66,10 @@ Durante o desenvolvimento deste desafio, foram reforçadas as seguintes competê
 - Inclusão de **mídias externas** (vídeos e fontes).
 
 
-## 👤 Autor
+---
 
-- **Erick Rocha Luciano Nascimento**
-- **https://www.linkedin.com/in/erickrochanascimento/**
+## 🧑‍💻 Autor
+
+**Erick Rocha Nascimento**  
+🔗 [LinkedIn](https://www.linkedin.com/in/erickrochanascimento) | [GitHub](https://github.com/ErickRochaNascimento)
+
